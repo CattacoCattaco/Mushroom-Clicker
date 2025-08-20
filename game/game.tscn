@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://bhj8fwigta313"]
+
+[ext_resource type="PackedScene" uid="uid://dd4gu0rt5h142" path="res://game/spores/shrooms/mushroom.tscn" id="1_dxrkv"]
+[ext_resource type="Texture2D" uid="uid://dw5yn1o0rvqo2" path="res://game/spores/shrooms/big_red_mushroom.png" id="2_dakft"]
+[ext_resource type="Script" uid="uid://dxswrjcvmgvha" path="res://game/camera/draggable_camera.gd" id="2_vasa2"]
+[ext_resource type="Texture2D" uid="uid://d32vf1baa78s3" path="res://game/ui/spores_scorecard.png" id="3_4fuuu"]
+[ext_resource type="Theme" uid="uid://c0s3xkss3h2gm" path="res://game/ui/text_bold.tres" id="3_h7iqs"]
+[ext_resource type="Script" uid="uid://cxo46i38x11n5" path="res://game/spores/spores_scorecard.gd" id="4_dxrkv"]
+
+[node name="Game" type="Node2D"]
+
+[node name="BigMushroom" parent="." node_paths=PackedStringArray("spores_scorecard") instance=ExtResource("1_dxrkv")]
+position = Vector2(-16, -16)
+texture = ExtResource("2_dakft")
+spores_scorecard = NodePath("../DraggableCamera/Control/SporesScorecard")
+is_big = true
+
+[node name="DraggableCamera" type="Camera2D" parent="."]
+script = ExtResource("2_vasa2")
+
+[node name="Control" type="Control" parent="DraggableCamera"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -160.0
+offset_top = -90.0
+offset_right = 160.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="SporesScorecard" type="Sprite2D" parent="DraggableCamera/Control" node_paths=PackedStringArray("spore_labels")]
+texture = ExtResource("3_4fuuu")
+centered = false
+script = ExtResource("4_dxrkv")
+spore_labels = [NodePath("RedSpores"), NodePath("GreenSpores"), NodePath("BlueSpores")]
+
+[node name="RedSpores" type="Label" parent="DraggableCamera/Control/SporesScorecard"]
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 113.0
+offset_bottom = 15.0
+theme = ExtResource("3_h7iqs")
+theme_override_colors/font_color = Color(0.921569, 0.643137, 0.501961, 1)
+text = "BASIC SPORES: 123.4K"
+
+[node name="GreenSpores" type="Label" parent="DraggableCamera/Control/SporesScorecard"]
+offset_left = 4.0
+offset_top = 18.0
+offset_right = 113.0
+offset_bottom = 30.0
+theme = ExtResource("3_h7iqs")
+theme_override_colors/font_color = Color(0.972549, 0.941176, 0.67451, 1)
+text = "TOXIC SPORES: 123.4K"
+
+[node name="BlueSpores" type="Label" parent="DraggableCamera/Control/SporesScorecard"]
+offset_left = 4.0
+offset_top = 33.0
+offset_right = 113.0
+offset_bottom = 45.0
+theme = ExtResource("3_h7iqs")
+theme_override_colors/font_color = Color(0.666667, 0.807843, 0.976471, 1)
+text = "MAGIC SPORES: 123.4K"
