@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dctpt88e3ph2m"
-path="res://.godot/imported/blue_mushroom.png-b1ad3b457c4701051898139363ee0d5e.ctex"
+uid="uid://b3y5xvl1wbh00"
+path="res://.godot/imported/green_mushroom.png-c4b9767f0d0eb03fad5a83757aa8c45a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/spores/shrooms/blue_mushroom.png"
-dest_files=["res://.godot/imported/blue_mushroom.png-b1ad3b457c4701051898139363ee0d5e.ctex"]
+source_file="res://game/board_stuff/shrooms/green_mushroom.png"
+dest_files=["res://.godot/imported/green_mushroom.png-c4b9767f0d0eb03fad5a83757aa8c45a.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dd4gu0rt5h142"]
 
-[ext_resource type="Texture2D" uid="uid://c0jg5nj2hrl8u" path="res://game/spores/shrooms/red_mushroom.png" id="1_3qe3c"]
-[ext_resource type="Script" uid="uid://st55ghl8rbjn" path="res://game/spores/shrooms/mushroom.gd" id="2_su67v"]
+[ext_resource type="Texture2D" uid="uid://c0jg5nj2hrl8u" path="res://game/board_stuff/shrooms/red_mushroom.png" id="1_3qe3c"]
+[ext_resource type="Script" uid="uid://st55ghl8rbjn" path="res://game/board_stuff/shrooms/mushroom.gd" id="2_su67v"]
 
 [node name="Mushroom" type="Sprite2D" node_paths=PackedStringArray("texture_button")]
 texture = ExtResource("1_3qe3c")

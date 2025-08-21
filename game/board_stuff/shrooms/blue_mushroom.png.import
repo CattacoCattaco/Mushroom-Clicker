@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqbn7ev33i20d"
-path="res://.godot/imported/green_mycoling.png-4afd3e6835a3edde20603a4ae117553b.ctex"
+uid="uid://dctpt88e3ph2m"
+path="res://.godot/imported/blue_mushroom.png-f00d889ec5f8a93e0b461ec7eb6c3d13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://game/spores/mycolings/green_mycoling.png"
-dest_files=["res://.godot/imported/green_mycoling.png-4afd3e6835a3edde20603a4ae117553b.ctex"]
+source_file="res://game/board_stuff/shrooms/blue_mushroom.png"
+dest_files=["res://.godot/imported/blue_mushroom.png-f00d889ec5f8a93e0b461ec7eb6c3d13.ctex"]
 
 [params]
 

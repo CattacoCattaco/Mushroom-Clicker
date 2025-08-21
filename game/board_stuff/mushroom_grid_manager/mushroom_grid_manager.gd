@@ -13,6 +13,9 @@ var tiles: Array[Array] = []
 
 
 func _ready() -> void:
+	mushroom_tiles.create(Vector2i(GRID_SIZE, GRID_SIZE))
+	big_mushroom_tiles.create(Vector2i(GRID_SIZE, GRID_SIZE))
+	
 	for x in range(GRID_SIZE):
 		tiles.append([])
 		for y in range(GRID_SIZE):

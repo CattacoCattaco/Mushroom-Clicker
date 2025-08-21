@@ -1,0 +1,16 @@
+[remap]
+
+importer="bitmap"
+type="BitMap"
+uid="uid://bwyye8kv4h07h"
+path="res://.godot/imported/tile_click_mask.bmp-799cd76dbc2e295daf1bc2269e7ea5fd.res"
+
+[deps]
+
+source_file="res://game/board_stuff/mushroom_grid_manager/tile/tile_click_mask.bmp"
+dest_files=["res://.godot/imported/tile_click_mask.bmp-799cd76dbc2e295daf1bc2269e7ea5fd.res"]
+
+[params]
+
+create_from=0
+threshold=0.5
