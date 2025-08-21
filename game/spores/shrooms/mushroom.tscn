@@ -3,14 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://c0jg5nj2hrl8u" path="res://game/spores/shrooms/red_mushroom.png" id="1_3qe3c"]
 [ext_resource type="Script" uid="uid://st55ghl8rbjn" path="res://game/spores/shrooms/mushroom.gd" id="2_su67v"]
 
-[node name="Mushroom" type="Sprite2D" node_paths=PackedStringArray("timer", "texture_button")]
+[node name="Mushroom" type="Sprite2D" node_paths=PackedStringArray("texture_button")]
 texture = ExtResource("1_3qe3c")
 centered = false
 script = ExtResource("2_su67v")
-timer = NodePath("Timer")
 texture_button = NodePath("TextureButton")
-
-[node name="Timer" type="Timer" parent="."]
 
 [node name="TextureButton" type="TextureButton" parent="."]
 anchors_preset = 15
